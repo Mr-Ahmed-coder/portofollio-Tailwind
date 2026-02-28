@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Replace your current tailwind script with this -->
+<script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+ <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.1.2/dist/ionicons/ionicons.js"></script>
+
+  <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+  <nav class="bg-[#0A1931]/90 backdrop-blur-md fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold text-[#14B8A6]">Ahmed Mohamed</h1>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-10 text-[#F3F4F6] font-medium ">
+      <li><a href="#hero" class="hover:text-[#14B8A6] transition">Home</a></li>
+      <li><a href="#about" class="smooth hover:text-[#14B8A6] transition" class="smooth">About</a></li>
+      <li><a href="#projects" class="smooth hover:text-[#14B8A6] transition" class="smooth">Projects</a></li>
+      <li><a href="#contact" class="smooth hover:text-[#14B8A6] transition" class="smooth">Contact</a></li>
+       <li><a href="#contact" class="smooth hover:text-[#14B8A6] transition" class="smooth">Cv</a></li>
+
+    </ul>
+
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden text-[#F3F4F6] text-3xl">&#9776;</button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden flex flex-col bg-[#0A1931] px-6 pb-6 md:hidden">
+    <a href="#hero" class="py-2 text-[#F3F4F6] hover:text-[#14B8A6]">Home</a>
+    <a href="#about" class="py-2 text-[#F3F4F6] hover:text-[#14B8A6]">About</a>
+    <a href="#projects" class="py-2 text-[#F3F4F6] hover:text-[#14B8A6]">Projects</a>
+    <a href="#contact" class="py-2 text-[#F3F4F6] hover:text-[#14B8A6]">Contact</a>
+    <li><a href="#contact" class="smooth hover:text-[#14B8A6] transition" class="smooth">Cv</a></li>
+
+  </div>
+</nav>
+
+
+
+    <section class="relative min-h-screen flex items-center bg-[#0A1931] text-[#F3F4F6] px-6 md:px-16 overflow-hidden" id="hero">
+
+  <!-- Abstract Shapes -->
+  <div class="absolute top-20 right-20 w-96 h-96 bg-[#14B8A6] opacity-20 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-10 left-10 w-72 h-72 bg-[#FFC700] opacity-10 rounded-full blur-2xl"></div>
+
+  <!-- Hero Content -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full relative z-10">
+
+    <!-- LEFT: Text -->
+    <div>
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+        Hi, I'm <span class="text-[#14B8A6]">Ahmed</span> <br>
+        Web Developer & Graphic Designer
+      </h1>
+
+      <p class="text-gray-300 text-lg mt-6 mb-8 leading-relaxed">
+        I build modern, responsive, and high-quality websites using
+        <span class="text-[#14B8A6] font-semibold">MERN stack</span>,
+        <span class="text-[#14B8A6] font-semibold">Tailwind CSS</span>, and
+        <span class="text-[#14B8A6] font-semibold">JavaScript</span>.
+      </p>
+
+      <div class="flex gap-4">
+        <a href="#projects"
+           class="smooth px-6 py-3 bg-[#14B8A6] text-[#0A1931] font-semibold rounded-lg shadow-lg hover:bg-teal-500  transition 500 hover:bg-[#0A1931]">
+          View Projects
+        </a>
+
+        <a href="#contact"
+           class="smooth px-6 py-3 border border-[#14B8A6] text-[#14B8A6] rounded-lg hover:bg-teal-500 hover:text-[#0A1931] transition 500 hover:bg-[#14B8A6] cursor-pointer">
+          Contact Me
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Image -->
+    <div class="flex justify-end pr-10"> 
+                     
+      <img src="images/Ahmed 2.png" alt="Developer Illustration"
+           class="w-[300px] h-[430px] border-4 border-[#14B8A6] rounded-2xl shadow-[0_0_100px_#14B8A6] 
+                      transition-all duration-500 hover:scale-105 hover:shadow-[0_0_35px_#14B8A6] hover:border-[#fff] cursor-pointer">
+          </div>
+
+  </div>
+</section>
+
+<section id="about" class="py-24 bg-[#0A1931] text-[#F3F4F6] px-6 md:px-16">
+  <div class="max-w-4xl mx-auto">
+
+    <!-- Title -->
+    <h2 class="text-4xl font-bold mb-8 text-[#14B8A6] cursor-pointer transition hover:text-white"> About me</h2>
+
+    <!-- Main Paragraph -->
+    <p class="text-lg text-[#D1D5DB] leading-relaxed">
+     I am Ahmed Mohamed Ali, a fourth-year Computer Science student pursuing a Bachelor of Science in Computer Science (BSCS) 
+     at one of the leading private universities in Kampala.
+   Over the past five years, I have built my expertise as a self-taught developer, 
+gaining strong skills in full-stack web development, graphic design, and digital problem-solving. 
+My journey in technology began with graphic design,
+ where I later worked as a teacher, helping others develop creative and technical skills.
+I am a highly focused and disciplined individual with a strong commitment to continuous
+learning and professional growth. I am passionate about building efficient, modern, 
+and impactful digital solutions. My goal is to become an exceptional software engineer 
+and contribute to meaningful and innovative projects.
+    </p>
+
+    <!-- Highlights Section -->
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+      <!-- Item -->
+      <div class="flex items-start gap-4 bg-[#0F2547] p-5 rounded-xl shadow-xl border border-[#1E3A5F]">
+        <span class="text-[#14B8A6] text-2xl"><ion-icon name="book-outline"></ion-icon> </span>
+        <p class="text-[#D1D5DB] text-lg font-medium">Fast learner</p>
+      </div>
+
+      <!-- Item -->
+      <div class="flex items-start gap-4 bg-[#0F2547] p-5 rounded-xl shadow-xl border border-[#1E3A5F]">
+        <span class="text-[#14B8A6] text-2xl"><ion-icon name="bulb-outline"></ion-icon></span>
+        <p class="text-[#D1D5DB] text-lg font-medium">Passionate about design & development</p>
+      </div>
+
+      <!-- Item -->
+      <div class="flex items-start gap-4 bg-[#0F2547] p-5 rounded-xl shadow-xl border border-[#1E3A5F]">
+        <span class="text-[#14B8A6] text-2xl"><ion-icon name="hourglass-outline"></ion-icon></span>
+        <p class="text-[#D1D5DB] text-lg font-medium">Work under pressure & meet deadlines</p>
+      </div>
+
+      <!-- Item -->
+      <div class="flex items-start gap-4 bg-[#0F2547] p-5 rounded-xl shadow-xl border border-[#1E3A5F]">
+        <span class="text-[#14B8A6] text-2xl"><ion-icon name="code-slash-outline"></ion-icon> </span>
+        <p class="text-[#D1D5DB] text-lg font-medium">Interested in fullstack development</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+   <section id="skills" class="py-24 bg-[#0A1931] text-[#F3F4F6] px-6 md:px-16">
+   <div class="max-w-5xl mx-auto text-center">
+
+    <!-- Title -->
+    <h2 class="text-4xl font-bold text-[#14B8A6] mb-4">Skills</h2>
+    <p class="text-[#D1D5DB] text-lg mb-12">
+      Technologies I work with and constantly learning improve on
+    </p>
+
+    <!-- Skills Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+      <!-- HTML -->
+      <div class="bg-[#0F2547] p-6 rounded-xl shadow-xl border border-[#1E3A5F] text-center">
+        <span class="text-4xl"><ion-icon name="logo-html5" class="text-4xl text-[#14B8A6] mx-auto"></ion-icon></span>
+        <h3 class="text-xl font-semibold text-[#14B8A6] mt-3">HTML</h3>
+        <p class="text-[#D1D5DB] mt-1">Structure & semantic markup</p>
+      </div>
+
+      <!-- CSS -->
+      <div class="bg-[#0F2547] p-6 rounded-xl shadow-xl border border-[#1E3A5F] text-center">
+        <span class="text-4xl"><ion-icon name="logo-css3" class="text-4xl text-[#14B8A6] mx-auto"></ion-icon></span>
+        <h3 class="text-xl font-semibold text-[#14B8A6] mt-3">CSS</h3>
+        <p class="text-[#D1D5DB] mt-1">animations & Tailwind</p>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="bg-[#0F2547] p-6 rounded-xl shadow-xl border border-[#1E3A5F] text-center">
+        <span class="text-4xl"><ion-icon name="logo-javascript" class="text-4xl text-[#14B8A6] mx-auto"></ion-icon></span>
+        <h3 class="text-xl font-semibold text-[#14B8A6] mt-3">JavaScript</h3>
+        <p class="text-[#D1D5DB] mt-1">dynamic UI & interactivity</p>
+      </div>
+
+      <!-- React -->
+      <div class="bg-[#0F2547] p-6 rounded-xl shadow-xl border border-[#1E3A5F] text-center">
+        <span class="text-4xl"><ion-icon name="logo-react" class="text-4xl text-[#14B8A6] mx-auto"></ion-icon></span>
+        <h3 class="text-xl font-semibold text-[#14B8A6] mt-3">React</h3>
+        <p class="text-[#D1D5DB] mt-1">components & state management</p>
+      </div>
+
+      <!-- Python -->
+      <div class="bg-[#0F2547] p-6 rounded-xl shadow-xl border border-[#1E3A5F] text-center">
+        <span class="text-4xl"><ion-icon name="logo-Nodejs" class="text-4xl text-[#14B8A6] mx-auto"></ion-icon></span>
+        <h3 class="text-xl font-semibold text-[#14B8A6] mt-3">Node.js</h3>
+        <p class="text-[#D1D5DB] mt-1">logic, scripting</p>
+      </div>
+
+      <!-- Django -->
+      <div class="bg-[#0F2547] p-6 rounded-xl shadow-xl border border-[#1E3A5F] text-center">
+        <span class="text-4xl"><ion-icon name="construct-outline"  class="text-4xl text-[#14B8A6] mx-auto"></ion-icon></span>
+        <h3 class="text-xl font-semibold text-[#14B8A6] mt-3">Java</h3>
+        <p class="text-[#D1D5DB] mt-1">Java</p>
+      </div>
+
+      <!-- APIs -->
+      <div class="bg-[#0F2547] p-6 rounded-xl shadow-xl border border-[#1E3A5F] text-center sm:col-span-2 md:col-span-3">
+        <span class="text-4xl"><ion-icon name="cloud-outline" class="text-4xl text-[#14B8A6] mx-auto"></ion-icon></span>
+        <h3 class="text-xl font-semibold text-[#14B8A6] mt-3">RESTful APIs</h3>
+        <p class="text-[#D1D5DB] mt-1">Building & consuming APIs</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Projects Section -->
+<section class="py-16  bg-[#0A1931]" id="projects">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    
+    <h2 class="text-4xl font-bold text-[#14B8A6] mb-6">
+      My Projects
+    </h2>
+
+    <p class="text-[#F3F4F6] mb-12 max-w-2xl mx-auto">
+      Here are some of the projects I’ve built while learning and improving my web development skills.
+      Each project reflects my growth and passion for creating clean, functional, and modern web applications.
+    </p>
+
+    <!-- Projects Grid -->
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div class="bg-[#102544] p-6 rounded-2xl border border-[#14B8A6]/30 hover:border-[#14B8A6] transition shadow-lg">
+        <div class="w-12 h-12 mx-auto bg-[#14B8A6]/20 rounded-full flex items-center justify-center text-[#14B8A6] text-2xl mb-4">
+           <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+        </div>
+        <h3 class="text-xl font-semibold text-[#14B8A6] mb-2">Online health food</h3>
+        <p class="text-[#F3F4F6] mb-4">
+          A HTML, CSS & JS responsive modern website which present health meals
+        </p>
+        <a href="https://splendid-naiad-537f04.netlify.app/" class="text-[#FFC700] font-medium hover:underline">View Project →</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-[#102544] p-6 rounded-2xl border border-[#14B8A6]/30 hover:border-[#14B8A6] transition shadow-lg">
+        <div class="w-12 h-12 mx-auto bg-[#14B8A6]/20 rounded-full flex items-center justify-center text-[#14B8A6] text-2xl mb-4">
+          <ion-icon name="desktop-outline"></ion-icon>
+        </div>
+        <h3 class="text-xl font-semibold text-[#14B8A6] mb-2">Som IT solutions</h3>
+        <p class="text-[#F3F4F6] mb-4">
+          A modern and clean website using html CSS and JavaScript.
+        </p>
+        <a href="https://somcit-portfolio.netlify.app/" class="text-[#FFC700] font-medium hover:underline">View Project →</a>
+      </div>
+
+      
+
+      <!-- Project 3 -->
+      <div class="bg-[#102544] p-6 rounded-2xl border border-[#14B8A6]/30 hover:border-[#14B8A6] transition shadow-lg">
+        <div class="w-12 h-12 mx-auto bg-[#14B8A6]/20 rounded-full flex items-center justify-center text-[#14B8A6] text-2xl mb-4">
+           <ion-icon name="print-outline"></ion-icon>
+        </div>
+        <h3 class="text-xl font-semibold text-[#14B8A6] mb-2">Examination Management System</h3>
+        <p class="text-[#F3F4F6] mb-4">
+          A Django project which I contributed university hackathon as a winner, the system contains crud operations and report student tanscript
+        </p>
+        <a href="#" class="text-[#FFC700] font-medium hover:underline">View Project →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-[#0A1931]" id="contact">
+
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+
+    <!-- Contact Info -->
+    <div class="text-[#F3F4F6]">
+      <h2 class="text-4xl font-bold text-[#14B8A6] mb-6">Contact Me</h2>
+      <p class="mb-6">
+        I’m open to oportunities and collaborations. So you can reach out via email, phone, or social media.
+      </p>
+      <ul class="space-y-4 text-lg text-[#F3F4F6]">
+  <li>
+    <ion-icon name="mail-outline" class="align-middle mr-2 text-[#14B8A6]"></ion-icon>
+    <a href="mailto:subha.abdi@gmail.com" class="hover:text-[#FFC700] transition">Ahmed Mohamed</a>
+  </li>
+  <li>
+    <ion-icon name="call-outline" class="align-middle mr-2 text-[#14B8A6]"></ion-icon>
+    <a href="tel:+252633982629" class="hover:text-[#FFC700] transition">+256 754844459</a>
+  </li>
+  <li>
+    <ion-icon name="location-outline" class="align-middle mr-2 text-[#14B8A6]"></ion-icon>
+    Kampala, Uganda
+  </li>
+</ul>
+
+     
+<!-- Contact Section Social Icons -->
+<div class="flex gap-6 mt-6">
+  <a href="https://github.com/Mr-Ahmed-coder" target="_blank" class="text-[#14B8A6] text-2xl hover:text-[#FFC700] transition">
+    <ion-icon name="logo-github"></ion-icon>
+  </a>
+  <a href="https://www.linkedin.com/in/ahmed-mo-ali-a06b362ab?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="text-[#14B8A6] text-2xl hover:text-[#FFC700] transition">
+    <ion-icon name="logo-linkedin"></ion-icon>
+  </a>
+  <a href="https://www.facebook.com" target="_blank" class="text-[#14B8A6] text-2xl hover:text-[#FFC700] transition">
+    <ion-icon name="logo-facebook"></ion-icon>
+  </a>
+</div>
+
+
+    </div>
+
+    <!-- Contact Form -->
+    <form class="bg-[#102544] p-6 rounded-2xl border border-[#14B8A6]/30 shadow-lg flex flex-col gap-4">
+      <input type="text" placeholder="Your Name" class="p-4 rounded-lg border border-[#14B8A6]/50 bg-[#0A1931] text-[#F3F4F6]" required>
+      <input type="email" placeholder="Your Email" class="p-4 rounded-lg border border-[#14B8A6]/50 bg-[#0A1931] text-[#F3F4F6]" required>
+      <textarea placeholder="Your Message" class="p-4 rounded-lg border border-[#14B8A6]/50 bg-[#0A1931] text-[#F3F4F6]" rows="5" required></textarea>
+      <button type="submit" class="bg-[#FFC700] text-[#0A1931] font-bold py-3 px-6 rounded-lg hover:bg-[#FFD633] transition">
+        Send Message
+      </button>
+    </form>
+
+  </div>
+</section>
+
+
+
+</footer>
+
+
+
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+  btn.onclick = () => menu.classList.toggle("hidden");
+</script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.1.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>
